@@ -1,0 +1,126 @@
+html{
+    background:url(image/header.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+ margin: auto 0;
+    }
+    /**menu**/
+ .menu-nav{
+ background-color: white;  
+ display:flex;
+ margin: 0;
+ font-size: 15px;
+ }
+
+ul{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex; 
+    list-style: none;
+    font-family: fantasy;
+    margin-left:350px;
+
+   }
+li{
+padding: 30px;
+border-bottom:  2px blue;
+
+
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+     }
+/**cover**/
+
+.container{
+display:flex;
+align-items: center;
+justify-content: center;
+max-width: 100%;
+max-height: 100vh;
+
+}
+.cover{
+width:100%;
+height:100vh;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+/*************grid******/
+.wrapper-grid{
+display: grid;
+grid-gap: 20px;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+margin-top:300px;
+}
+
+.box{
+    background-color:black;
+    padding: 40px;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 280px;
+}
+.box >img{
+    width:300px;
+    height: 250px; 
+}
+/**button**/
+
+.click{
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 600px;
+    font-size:20px;
+    border-radius:30px 30px 30px 30px;
+    background-color:blue;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow: 2px 2px #999;
+}
+.click:hover {background-color: #698DD4
+}
+
+/**title**/
+#title >h2{
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100px;
+    font-style:italic;
+
+}
+
+/********mediaq responsive*****/
+
+@media only screen and (max-width: 600px){
+    .menu-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .container{
+        width:100%;
+    }
+    .cover{
+        width:100%;
+        height:350px;
+    }
+    .click{
+        margin: 150px;
+    }
+    .box{
+        width:100%;
+    }
+    .box >img{
+        width: 60%
+    }
+}
